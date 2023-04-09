@@ -67,45 +67,211 @@
       </ul>
     </div>
   </nav>
+  <button (click)="openModal()">Show</button>
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>
+      <div class="col-md-12 d-flex">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">Ut enim ad minim veniaullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">Ut enim ad minim veniaullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="col-md-12 d-flex">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">Ut enim ad minim veniaullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">Ut enim ad minim veniaullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="col-md-12 d-flex">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">Ut enim ad minim veniaullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">Ut enim ad minim veniaullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="col-md-12 d-flex">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">Ut enim ad minim veniaullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">Ut enim ad minim veniaullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="col-md-12 d-flex">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">Ut enim ad minim veniaullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">Ut enim ad minim veniaullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="col-md-12 d-flex">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">Ut enim ad minim veniaullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 3</h5>
+              <p class="card-text">Ut enim ad minim veniaullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+
+
   <!-- Student Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <form>
-          <div class="content text-primary">
+          <div class="content">
+            <h1>Sign up</h1>
             <div class="form-row d-flex">
               <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
                 <input type="email" class="form-control" id="inputEmail4" placeholder="Email" />
               </div>
               <div class="form-group col-md-6">
-                <label for="inputPassword4">Password</label>
                 <input type="password" class="form-control" id="inputPassword4" placeholder="Password" />
               </div>
             </div>
+            <h3>Details Of Parent/Guardian</h3>
             <div class="form-group">
-              <label for="inputAddress">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" />
+              <input type="text" class="form-control" id="inputAddress" placeholder="Name" />
             </div>
             <div class="form-group">
-              <label for="inputAddress2">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Email id" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Mobile Number" />
+            </div>
+            <h3>Details of Student</h3>
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputAddress" placeholder="Name" />
+            </div>
+            <div class="form-row d-flex">
+              <div class="form-group col-md-4">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="DOB" />
+              </div>
+              <div class="form-group col-md-4">
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Gender" />
+              </div>
+              <div class="form-group col-md-4">
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Class" />
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputAddress" placeholder="Name" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputAddress" placeholder="Name" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputAddress" placeholder="Name" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputAddress" placeholder="Name" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="inputAddress" placeholder="Name" />
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="inputCity">City</label>
                 <input type="text" class="form-control" id="inputCity" />
               </div>
               <div class="form-group col-md-4">
-                <label for="inputState">State</label>
                 <select id="inputState" class="form-control">
-                  <option selected>Choose...</option>
-                  <option>...</option>
+                  <option selected>Gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
                 </select>
               </div>
               <div class="form-group col-md-2">
-                <label for="inputZip">Zip</label>
                 <input type="text" class="form-control" id="inputZip" />
               </div>
             </div>
@@ -114,7 +280,7 @@
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="gridCheck" />
               <label class="form-check-label" for="gridCheck">
-                Check me out
+                By clicking on register you agree to our Terms and Conditions
               </label>
             </div>
           </div>
