@@ -45,7 +45,7 @@
 }
 
 .navbar .logo img {
-  width: 50%;
+  width: 95%;
 }
 
 .navbar .icons {
@@ -74,6 +74,9 @@
 .dropdown-item {
   background: none;
   cursor: pointer;
+  font-family: Lato;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .dropdown-item:hover {
@@ -89,7 +92,6 @@
 }
 .modal-content {
   margin-top: 5rem;
-  /* padding: 2rem; */
   background: transparent;
   border: none;
 }
@@ -170,6 +172,24 @@ form button {
   outline: none;
 }
 
+/* Slider start */
+.slider{
+  background: var(--light-color);
+  padding-top: 5rem;
+  text-align: center;
+}
+.slider .container{
+  background: blue;
+  display: flex;
+  justify-content: center;
+}
+.slider .container .content{
+  background: linear-gradient(90deg, #D58249 0%, #EFCFB9 100%);
+  border-radius: 70px;
+  height: 60vh;
+  width: 1050px;
+  border-radius: 70px;
+}
 /* Services start*/
 
 .services {
@@ -237,14 +257,11 @@ form button {
   font-family: Merriweather;
   font-size: 14px;
   font-weight: 700;
+  
 }
 
 .two {
   background: linear-gradient(90deg, #e47f39 0%, #ac7149 100%);
-}
-
-.four {
-  background: linear-gradient(90deg, #fef8f4 0%, #f2ab7a 100%);
 }
 
 .five {
@@ -255,7 +272,7 @@ form button {
   margin: 0px 1rem 1rem 1rem;
   font-family: Lato;
   font-size: 19px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 28px;
 }
 
@@ -270,6 +287,13 @@ footer h5 {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
+}
+footer ul{
+  display: flex;
+  justify-content: center;
+}
+footer ul li{
+  padding: 5px;
 }
 footer ul li a {
   font-family: Lato;
