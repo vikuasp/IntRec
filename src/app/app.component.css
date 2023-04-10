@@ -190,6 +190,17 @@ form button {
   width: 1050px;
   border-radius: 70px;
 }
+
+.slide{
+  text-align: center;
+}
+.slide .card{
+  display: flex;
+  margin: 20px;
+}
+.slide .card .first{
+  margin: 10px;
+}
 /* Services start*/
 
 .services {
