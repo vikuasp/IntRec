@@ -75,8 +75,8 @@
   background: none;
   cursor: pointer;
   font-family: Lato;
-    font-size: 22px;
-    font-weight: 600;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .dropdown-item:hover {
@@ -173,34 +173,119 @@ form button {
 }
 
 /* Slider start */
-.slider{
-  background: var(--light-color);
-  padding-top: 5rem;
+.slider {
+  background: var(--primary-color);
+  border-radius: 50px;
+  margin: 5rem;
+  padding: 1rem 0;
+}
+.slider .student {
+  justify-content: center;
   text-align: center;
 }
-.slider .container{
-  background: blue;
+.slider .student .slide {
+  display: flex;
+  margin: 50px;
+}
+.slider .student h1 {
+  color: var(--light-color);
+  font-family: Lato;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+/* card added */
+
+.slide .card {
+  overflow: hidden;
+  text-align: center;
+  margin: 10px;
+  background: #fffcfd;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+}
+
+.card__media {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 110px;
+  background: linear-gradient(89.76deg, #754629 -51.66%, #ec833a 107.58%);
+  border-radius: 25px;
+}
+.card__media img {
+  width: 70px;
+}
+
+.card__image {
+  border-radius: 50%;
+  box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card__qr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  height: 50px;
+  width: 50px;
+}
+.card__id {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 5px;
+}
+
+.card__head {
+  display: flex;
+  justify-content: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+}
+.card__body .card__head img {
+  width: 20px;
+  margin-left: 5px;
+}
+
+.card__subhead {
+  font-family: Merriweather;
+  font-size: 8px;
+  font-weight: 300;
+}
+
+.card__body span {
+  font-family: Merriweather;
+  font-size: 3px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 4px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.card__actions {
   display: flex;
   justify-content: center;
 }
-.slider .container .content{
-  background: linear-gradient(90deg, #D58249 0%, #EFCFB9 100%);
-  border-radius: 70px;
-  height: 60vh;
-  width: 1050px;
-  border-radius: 70px;
+
+.card__link {
+  padding: 1.5rem;
+  font-size: 1.25rem;
 }
 
-.slide{
-  text-align: center;
+.card__link button {
+  background: #e89152;
+  border-radius: 12px;
+  color: #fff;
+  outline: none;
+  border: none;
 }
-.slide .card{
-  display: flex;
-  margin: 20px;
-}
-.slide .card .first{
-  margin: 10px;
-}
+
+/* Swiper start */
+/* card end */
+
 /* Services start*/
 
 .services {
@@ -268,7 +353,6 @@ form button {
   font-family: Merriweather;
   font-size: 14px;
   font-weight: 700;
-  
 }
 
 .two {
@@ -299,11 +383,11 @@ footer h5 {
   font-weight: 500;
   line-height: 19px;
 }
-footer ul{
+footer ul {
   display: flex;
   justify-content: center;
 }
-footer ul li{
+footer ul li {
   padding: 5px;
 }
 footer ul li a {
