@@ -2,11 +2,12 @@
 .navbar {
   top: 0;
   padding: 0;
-  background: #fff;
+  background: var(--light-color);
+  z-index: 100;
 }
 
 .navbar-toggler {
-  background: #fff;
+  background: var(--light-color);
   margin: 5px;
   border: none;
   outline: none;
@@ -22,7 +23,7 @@
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: #fffafa;
+  color: var(--light-color);
   margin: 20px 1.6rem;
   font-family: Lato;
   font-size: 22px;
@@ -30,17 +31,17 @@
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--light-color);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--light-color);
 }
 
 .navbar .logo {
   width: 20%;
   height: 100%;
-  background: #fff;
+  background: var(--light-color);
 }
 
 .navbar .logo img {
@@ -55,7 +56,7 @@
 
 .navbar .Sign_btn {
   background: rgba(0, 0, 0, 0.63);
-  color: #fff;
+  color: var(--light-color);
   padding: 7px 40px;
   border-radius: 20px;
 }
@@ -72,6 +73,7 @@
 
 .dropdown-item {
   background: none;
+  cursor: pointer;
 }
 
 .dropdown-item:hover {
@@ -81,19 +83,91 @@
 .modal-dialog {
   text-align: center;
 }
-
+.modal-lg {
+  width: 40%;
+  margin: auto;
+}
 .modal-content {
   margin-top: 5rem;
+  /* padding: 2rem; */
   background: transparent;
   border: none;
 }
 
-.content {
-  background: #fff;
+.modal-content .content {
+  background: var(--light-color);
   border-radius: 30px;
   padding: 3rem;
   text-align: center;
   align-items: center;
+}
+/* Student form */
+form h1 {
+  font-family: Lato;
+  font-size: 36px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+form h3 {
+  font-family: Merriweather;
+  font-size: 19px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+form .form-check-label {
+  font-family: Merriweather;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+form .guardian {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+}
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin-left: 5px;
+  border: 1px solid var(--primary-color);
+  padding: 2px;
+  color: var(--primary-color);
+}
+form .form-group {
+  display: flex;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+  padding: 0 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="date"],
+form input[type="password"] {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+form input::placeholder {
+  text-align: center;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+}
+form .form-control {
+  padding: 5px 20px;
+}
+
+form button {
+  background: linear-gradient(90deg, #ffffff -6.16%, #ffffff 100%);
+  border-radius: 36px;
+  color: var(--primary-color);
+  border: none;
+  outline: none;
 }
 
 /* Services start*/
@@ -112,10 +186,10 @@
 }
 
 .service-head {
-  background: #ffffff;
-  border: 1px solid #e89152;
+  background: var(--light-color);
+  border: 1px solid var(--primary-color);
   border-radius: 5rem;
-padding: 0 5rem 1rem 5rem;
+  padding: 0 5rem 1rem 5rem;
 }
 .service-head h3 {
   font-family: Lato;
@@ -143,19 +217,19 @@ padding: 0 5rem 1rem 5rem;
 }
 
 .service-item {
-  background: #ffffff;
-  border: 1px solid #e89152;
+  background: var(--light-color);
   border-radius: 2rem;
   height: 230px;
   margin: 30px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
 .title-container {
   overflow: hidden;
   transform: translate(-0%, -50%);
   text-transform: uppercase;
-  color: #ffffff;
-  background: linear-gradient(180deg, #235024 0%, #238a23 100%);
+  color: var(--light-color);
+  background: linear-gradient(90deg, #238a23 0%, #235024 100%);
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
@@ -166,15 +240,15 @@ padding: 0 5rem 1rem 5rem;
 }
 
 .two {
-  background: linear-gradient(180deg, #ac7149 0%, #e47f39 100%);
+  background: linear-gradient(90deg, #e47f39 0%, #ac7149 100%);
 }
 
 .four {
-  background: linear-gradient(180deg, #f2ab7a 0%, #fef8f4 100%);
+  background: linear-gradient(90deg, #fef8f4 0%, #f2ab7a 100%);
 }
 
 .five {
-  background: linear-gradient(180deg, #184155 0%, #046d99 100%);
+  background: linear-gradient(90deg, #046d99 0%, #184155 100%);
 }
 
 .service-item p {
