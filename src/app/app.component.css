@@ -173,129 +173,63 @@ form button {
 }
 
 /* Slider start */
-.slider {
-  width: 900px;
-  height: 553px;
-  margin: 5rem auto;
+.hero {
+  background: #fff;
+  height: 100vh;
+  padding: 4rem;
+  overflow-x: hidden;
+}
+
+.hero .container {
+  width: 50%;
+  height: 70vh;
   background: linear-gradient(90deg, #D58249 0%, #EFCFB9 100%);
-  border-radius: 70px;
+    border-radius: 70px;
+  margin: 1rem auto;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
 }
-.vikash{
-  overflow: hidden;
-  width: 100%;
-  left: 0;
-  position: absolute;
+
+.hero .slider {
+  width: 200%;
+  margin: 0 calc(-50%);
 }
-.slider .student {
+
+.hero .slide {
+  grid-auto-flow: column;
+  overflow-y: auto;
+  margin: 0 -20% 0 -20%;
+}
+
+.hero .slide::-webkit-scrollbar {
+  display: none;
+}
+
+.hero .student {
+  scroll-snap-align: start;
+  border-radius: 20px;
+  width: 400px;
+  margin-left: 5rem;
   text-align: center;
-  position: relative;
-  left: -150px;
-    justify-content: center;
-    padding: 0 100px;
+  justify-content: center;
 }
-.slider .student .slide {
+.hero .profile{
   display: flex;
+  justify-content: space-between;
 }
-.slider .student h1 {
-  color: var(--light-color);
-  font-family: Lato;
-    font-size: 23px;
-    font-weight: 800;
-}
-
-/* card added */
-
-.slide .card {
-  width: 218px;
-  height: 380px;
-  text-align: center;
-  margin: 10px;
-  background: #fffcfd;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
-}
-
-.card__media {
-  position: relative;
-  display: grid;
-  place-items: center;
-  height: 110px;
-  background: linear-gradient(89.76deg, #754629 -51.66%, #ec833a 107.58%);
-  border-radius: 25px;
-}
-.card__media img {
-  width: 70px;
-}
-
-.card__image {
-  border-radius: 50%;
-  box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.card__qr {
-  position: absolute;
-  top: 0;
-  right: 0;
+.hero .profile .card{
+  width: 200px;
   margin: 1rem;
-  height: 50px;
-  width: 50px;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
 }
-.card__id {
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: 800;
-  padding: 5px;
+.owl-prev{
+  height: 60px !important;
+  width: 60px !important;
+  background: #238a23 !important;
+  border-radius: 50% !important;
 }
-
-.card__head {
-  display: flex;
-  justify-content: center;
-  font-family: Lato;
-  font-size: 16px;
-  font-weight: 400;
-}
-.card__body .card__head img {
-  width: 20px;
-  margin-left: 5px;
-}
-
-.card__subhead {
-  font-family: Merriweather;
-  font-size: 8px;
-  font-weight: 300;
-}
-
-.card__body span {
-  font-family: Merriweather;
-  font-size: 3px;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 4px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-.card__actions {
-  display: flex;
-  justify-content: center;
-}
-
-.card__link {
-  padding: 1.5rem;
-  font-size: 1.25rem;
-}
-
-.card__link button {
-  background: #e89152;
-  border-radius: 12px;
-  color: #fff;
-  outline: none;
-  border: none;
-}
-
-/* Swiper start */
-/* card end */
-
 /* Services start*/
 
 .services {
