@@ -174,18 +174,27 @@ form button {
 
 /* Slider start */
 .slider {
-  background: var(--primary-color);
-  border-radius: 50px;
-  margin: 5rem;
-  padding: 1rem 0;
+  width: 900px;
+  height: 553px;
+  margin: 5rem auto;
+  background: linear-gradient(90deg, #D58249 0%, #EFCFB9 100%);
+  border-radius: 70px;
+}
+.vikash{
+  overflow: hidden;
+  width: 100%;
+  left: 0;
+  position: absolute;
 }
 .slider .student {
-  justify-content: center;
   text-align: center;
+  position: relative;
+  left: -150px;
+    justify-content: center;
+    padding: 0 100px;
 }
 .slider .student .slide {
   display: flex;
-  margin: 50px;
 }
 .slider .student h1 {
   color: var(--light-color);
@@ -197,7 +206,8 @@ form button {
 /* card added */
 
 .slide .card {
-  overflow: hidden;
+  width: 218px;
+  height: 380px;
   text-align: center;
   margin: 10px;
   background: #fffcfd;
