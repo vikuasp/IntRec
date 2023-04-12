@@ -180,25 +180,26 @@ form button {
   text-align: center;
 }
 
-.hero .head{
+.hero .head {
   padding: 1rem;
 }
-.hero .head h3{
+.hero .head h3 {
   font-family: Lato;
-    font-size: 20px;
-    font-weight: 400;
+  font-size: 20px;
+  font-weight: 400;
 }
-.hero .head .title{
+.hero .head .title {
   display: flex;
-  justify-content:end;
+  justify-content: end;
 }
-.hero .head .title h5{
+.hero .head .title h5 {
   font-family: Lato;
-    font-size: 23px;
-    font-weight: 300;
+  font-size: 23px;
+  font-weight: 300;
 }
 
-.hero ::ng-deep .owl-prev, .hero ::ng-deep .owl-next {
+.hero ::ng-deep .owl-prev,
+.hero ::ng-deep .owl-next {
   position: absolute;
   top: 50%;
   width: 46px;
@@ -215,21 +216,21 @@ form button {
   right: 35%;
 }
 
-.hero .head button{
+.hero .head button {
   height: 54px;
-    width: 138px;
-    margin-left: 6rem;
-    border-radius: 36px;
-  background: #E89152;
-    border-radius: 36px;
-    border: none;
-    color: var(--light-color);
+  width: 138px;
+  margin-left: 6rem;
+  border-radius: 36px;
+  background: #e89152;
+  border-radius: 36px;
+  border: none;
+  color: var(--light-color);
 }
 
 .hero .container {
   width: 900px;
   height: 553px;
-  background: linear-gradient(90deg, #D58249 0%, #EFCFB9 100%);
+  background: linear-gradient(90deg, #d58249 0%, #efcfb9 100%);
   border-radius: 70px;
   margin: 1rem auto;
   padding: 1rem;
@@ -257,18 +258,18 @@ form button {
   margin: 0 6rem;
   text-align: center;
 }
-.hero .student h1{
+.hero .student h1 {
   color: var(--light-color);
 }
-.hero .profile{
+.hero .profile {
   display: flex;
   justify-content: space-between;
 }
-.hero .profile .card{
+.hero .profile .card {
   width: 300px;
   margin: 1rem;
   height: 380px;
-  background: #FFFCFD;
+  background: #fffcfd;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
   border-radius: 52px;
 }
@@ -278,76 +279,68 @@ form button {
   position: relative;
   display: grid;
   place-items: center;
-  height: 196px;
   width: 218px;
-  /* margin-bottom: 0; */
-  background: linear-gradient(89.76deg, #754629 -51.66%, #EC833A 107.58%);
-    border-radius: 50px;
+  height: 196px;
+  background: linear-gradient(89.76deg, #754629 -51.66%, #ec833a 107.58%);
+  border-radius: 50px;
 }
-.card__media img{
-  width: 50px;
-  height: 50px;
-}
-
-.card__image {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  border: 2px solid #e89152;
-}
-.card__qr {
+.card__media .card__qr {
+  /* width: 50px;
+  height: 40px; */
   position: absolute;
-  top: 0;
-  right: 0;
-  margin: 1rem;
-  height: 50px;
-  width: 50px;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    width: 50px;
+    height: 40px;
 }
-.card__id {
+.card__media .card__image{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: -2px 8px 8px rgba(0, 0, 0, 0.25);
+  
+}
+.card__body{
+  padding: 1rem;
+}
+.card__body .id {
   font-family: Lato;
-  font-size: 7px;
+  font-size: 9px;
   font-weight: 800;
 }
-.card__head {
+.card__body .name {
   font-family: Lato;
-    font-size: 16px;
-    font-weight: 400;
-    color: #000;
-    display: flex;
-    line-height: 5px;
-    justify-content: center;
-}
-.card__head img{
-  width: 20px;
-  margin-left: 2px;
-}
-
-.card__subhead {
-  font-family: Merriweather;
-    font-size: 8px;
-    font-weight: 300;
-    line-height: 2px;
-}
-
-.card__body span {
-  font-family: Merriweather;
-    font-size: 6px;
-    font-style: italic;
-    font-weight: 300;
-}
-
-.card__actions {
+  font-size: 19px;
+  font-weight: 400;
   display: flex;
   justify-content: center;
 }
-
-.card__link button {
-  background: #e89152;
-  border-radius: 12px;
-  color: #fff;
-  outline: none;
-  border: none;
+.card__body .name .send {
+  width: 20px;
+  margin-left: 5px;
 }
+
+.card__body .standard {
+  font-family: Merriweather;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.card__body .experience,
+.card__body .address {
+  font-family: Merriweather;
+  font-size: 9px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.card__body .actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
 /* Card end */
 
 /* Services start*/
@@ -459,16 +452,16 @@ footer ul li a {
   font-size: 12px;
   font-weight: 400;
 }
-footer .map img{
+footer .map img {
   width: 50%;
 }
-footer .copyright{
+footer .copyright {
   text-align: center;
   border-top: 1px solid var(--light-color);
   font-family: Lato;
-    font-size: 13px;
-    font-weight: 500;
+  font-size: 13px;
+  font-weight: 500;
 }
-footer .copyright p{
+footer .copyright p {
   margin: 5px;
 }
