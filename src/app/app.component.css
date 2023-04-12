@@ -203,8 +203,8 @@ form button {
 }
 .hero .head h3 {
   font-family: Lato;
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
 }
 .hero .head .title {
   display: flex;
@@ -229,7 +229,7 @@ form button {
 
 .hero .container {
   width: 900px;
-  height: 553px;
+  height: 570px;
   background: linear-gradient(90deg, #d58249 0%, #efcfb9 100%);
   border-radius: 70px;
   margin: 1rem auto;
@@ -261,9 +261,35 @@ form button {
 .hero .student h1 {
   color: var(--light-color);
   font-family: Lato;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
 }
+.hero .student .details{
+  justify-content: center;
+}
+.hero .student .details h5{
+  font-family: Lato;
+    font-weight: 700;
+  font-size: 14px;
+  color: var(--light-color);
+}
+.hero .student .details .slog{
+  display: flex;
+}
+.hero .student .slog h6{
+  font-family: Lato;
+    font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+.hero .student .slog button{
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 0 20px;
+  background: var(--light-color);
+  border-radius: 20px;
+}
+
 .hero .profile {
   display: flex;
   justify-content: space-between;
