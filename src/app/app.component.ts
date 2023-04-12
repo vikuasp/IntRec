@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
     pullDrag: false,
     dots: false,
     navSpeed: 700,
-    navText: ['<-', '->'],
+    navText: ['<', '>'],
     responsive: {
       0: {
         items: 1
